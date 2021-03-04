@@ -14,6 +14,10 @@ body {
     background-repeat: no-repeat;
   }
 
+  &_galery {
+    max-width: 1740px;
+  }
+
   @media (max-width: 1200px) {
     padding-left: 30px;
     padding-right: 30px;

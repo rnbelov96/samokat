@@ -9,6 +9,16 @@
   border-top-right-radius: 14px;
   box-shadow: -10.3px 3.8px 54px 0 rgba(0, 0, 0, 0.07);
   background-color: #f1e7ff;
+
+  &_about {
+    background-color: #8d3dff;
+
+    & .form-modal__title,
+    & .form-modal__policy-text,
+    & .form-modal__policy {
+      color: $white;
+    }
+  }
 }
 
 .form-modal__title {
