@@ -1,0 +1,87 @@
+.model {
+  min-height: 900px;
+  padding-top: 84px;
+  padding-bottom: 70px;
+
+  @include bg;
+  background-image: url('/src/img/bgs/model-bg.jpg');
+
+  overflow-x: hidden;
+}
+
+.model__title {
+  margin-bottom: 50px;
+
+  font-family: HeliosExt;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  color: #000000;
+}
+
+.model__content {
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 21px;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+.model__row {
+  display: flex;
+  min-height: 56px;
+
+  border-bottom: 1px solid #8d3dff;
+
+  &:first-child, &:last-child {
+    border-bottom: none;
+  }
+
+  &_head {
+    min-height: 80px;
+  }
+}
+
+.model__cell {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  font-size: 18px;
+  color: black;
+  text-align: center;
+
+  background-color: $white;
+
+  &_income, &_spend {
+    background-color: #580ec3;
+
+    font-family: HeliosExt;
+    font-size: 24px;
+    font-weight: 900;
+    color: $white;
+  }
+
+  &_spend {
+    background-color: #8d3dff;
+  }
+
+  &_dark {
+    background-color: #f1e7ff;
+  }
+}
+
+.model__note {
+  position: relative;
+  right: 20px;
+
+  margin-bottom: 45px;
+
+  font-size: 14px;
+  text-align: right;
+  color: #000000;
+}

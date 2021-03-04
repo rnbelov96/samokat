@@ -1,4 +1,6 @@
 .form {
+  position: relative;
+
   padding: 43px 70px 31px;
 
   border-radius: 14px;
@@ -7,6 +9,17 @@
 
   &_line {
     margin-bottom: 80px;
+  }
+
+  &_model {
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: -231px;
+      left: -167px;
+
+      content: url("/src/img/tablet.png")
+    }
   }
 }
 
@@ -27,6 +40,8 @@
 }
 
 .form__input {
+  position: relative;
+  z-index: 2;
   width: 24%;
   padding: 22px 20px;
 
