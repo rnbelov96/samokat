@@ -1,0 +1,24 @@
+.input-error,
+.input-error:hover {
+  outline: solid #ce211f 2px;
+  & + svg {
+    path,
+    rect {
+      fill: #ce211f;
+    }
+  }
+  color: #ce211f;
+
+  &::-webkit-input-placeholder {
+    color: #ce211f;
+  }
+  &::-moz-placeholder {
+    color: #ce211f;
+  }
+  &:-ms-input-placeholder {
+    color: #ce211f;
+  }
+  &:-moz-placeholder {
+    color: #ce211f;
+  }
+}

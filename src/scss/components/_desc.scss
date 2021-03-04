@@ -1,0 +1,41 @@
+.desc {
+  min-height: 960px;
+  padding-bottom: 60px;
+  
+  @include bg;
+  background-image: url("/src/img/bgs/desc-bg.jpg");
+}
+
+.desc__title {
+  margin-top: 92px;
+  margin-bottom: 87px;
+
+  text-shadow: 0 0 15.3px #903bff;
+  font-family: HeliosExt;
+  font-size: 44px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 55px;
+}
+
+.desc__text {
+  margin-bottom: 23px;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.desc__note {
+  margin-bottom: 38px;
+
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.desc__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,80 @@
+.stats {
+  min-height: 780px;
+  padding-top: 85px;
+
+  @include bg;
+  background-image: url('/src/img/bgs/stats-bg.jpg');
+}
+
+.stats__title {
+  margin-bottom: 66px;
+
+  font-family: HeliosExt;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 41px;
+}
+
+.stats__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stats__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  width: 52%;
+}
+
+.stats__item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+
+  &:first-child {
+    & .stats__icon {
+      background-image: url('/src/img/icons/rechargeable.png');
+    }
+  }
+  &:nth-child(2) {
+    & .stats__icon {
+      background-image: url('/src/img/icons/wave.png');
+    }
+  }
+  &:nth-child(3) {
+    & .stats__icon {
+      background-image: url('/src/img/icons/weight-scale.png');
+    }
+  }
+  &:nth-child(4) {
+    & .stats__icon {
+      background-image: url('/src/img/icons/speedometer.png');
+    }
+  }
+}
+
+.stats__icon {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 31px;
+
+  background-color: #f1e7ff;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.stats__text {
+  margin-bottom: 0;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}

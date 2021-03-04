@@ -1,0 +1,36 @@
+body {
+  font-family: 'Roboto';
+  color: $white;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  &_grow {
+    background-image: url("/src/img/bgs/circle-bg.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
