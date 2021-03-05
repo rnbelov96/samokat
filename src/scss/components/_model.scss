@@ -34,6 +34,7 @@
   min-height: 56px;
 
   border-bottom: 1px solid #8d3dff;
+  background-color: #f1e7ff;
 
   &:first-child, &:last-child {
     border-bottom: none;
@@ -41,6 +42,8 @@
 
   &_head {
     min-height: 80px;
+
+    background-color: #8d3dff;
   }
 }
 
@@ -66,12 +69,20 @@
     color: $white;
   }
 
+  &_income {
+    border-top-right-radius: 14px;
+  }
+
   &_spend {
     background-color: #8d3dff;
   }
 
   &_dark {
     background-color: #f1e7ff;
+  }
+
+  &_rounded {
+    border-bottom-right-radius: 14px;
   }
 }
 

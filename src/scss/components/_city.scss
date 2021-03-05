@@ -1,0 +1,23 @@
+.city {
+  min-height: 700px;
+  padding-top: 85px;
+  padding-bottom: 70px;
+
+  @include bg;
+  background-image: url("/src/img/bgs/desc-bg.jpg");
+}
+
+.city__title {
+  margin-bottom: 45px;  
+
+  font-family: HeliosExt;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.city__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 184px;
+}

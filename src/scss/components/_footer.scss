@@ -1,0 +1,55 @@
+.footer {
+  min-height: 170px;
+
+  background-color: #580ec3;
+}
+
+.footer__wrapper {
+  min-height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  margin-bottom: 0;
+  font-size: 16px;
+
+  &_contact-box {
+    text-align: right;
+  }
+
+  &_copyright {
+    width: 65%;
+  }
+}
+
+.footer__phone-call, .footer__policy {
+  color: $white;
+  text-decoration: underline;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.footer__phone {
+  position: relative;
+
+  font-size: 28px;
+  font-weight: bold;
+  color: $white;
+  line-height: 19px;
+
+  &:hover {
+    color: $white;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    content: url("/src/img/icons/phone-white.png");
+  }
+}

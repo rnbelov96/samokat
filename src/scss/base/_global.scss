@@ -18,6 +18,10 @@ body {
     max-width: 1740px;
   }
 
+  &_footer {
+    min-height: inherit;
+  }
+
   @media (max-width: 1200px) {
     padding-left: 30px;
     padding-right: 30px;
