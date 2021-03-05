@@ -15,6 +15,10 @@
 
   &_form {
     width: 24%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &_form-modal {

@@ -4,6 +4,10 @@
 
   @include bg;
   background-image: url('/src/img/bgs/stats-bg.jpg');
+
+  @media (max-width: 575px) {
+    padding-top: 30px;
+  }
 }
 
 .stats__title {
@@ -14,12 +18,22 @@
   font-weight: 900;
   text-align: center;
   line-height: 41px;
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
 }
 
 .stats__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .stats__list {
@@ -28,6 +42,10 @@
   justify-content: space-around;
   
   width: 52%;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
 }
 
 .stats__item {

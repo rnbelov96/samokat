@@ -1,9 +1,9 @@
 .desc {
   min-height: 960px;
   padding-bottom: 60px;
-  
+
   @include bg;
-  background-image: url("/src/img/bgs/desc-bg.jpg");
+  background-image: url('/src/img/bgs/desc-bg.jpg');
 }
 
 .desc__title {
@@ -16,6 +16,22 @@
   font-weight: 900;
   text-align: center;
   line-height: 55px;
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+    margin-top: 65px;
+  }
+  @media (max-width: 767px) {
+    font-size: 31px;
+  }
+  @media (max-width: 575px) {
+    font-size: 21px;
+    line-height: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  
 }
 
 .desc__text {

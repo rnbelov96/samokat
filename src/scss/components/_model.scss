@@ -7,6 +7,10 @@
   background-image: url('/src/img/bgs/model-bg.jpg');
 
   overflow-x: hidden;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+  }
 }
 
 .model__title {
@@ -17,6 +21,14 @@
   font-weight: 900;
   text-align: center;
   color: #000000;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
 }
 
 .model__content {
@@ -27,6 +39,10 @@
   border-radius: 14px;
 
   overflow: hidden;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
 }
 
 .model__row {
@@ -67,6 +83,10 @@
     font-size: 24px;
     font-weight: 900;
     color: $white;
+
+    @media (max-width: 575px) {
+      font-size: 15px;
+    }
   }
 
   &_income {
@@ -84,6 +104,10 @@
   &_rounded {
     border-bottom-right-radius: 14px;
   }
+
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
 }
 
 .model__note {
@@ -95,4 +119,8 @@
   font-size: 14px;
   text-align: right;
   color: #000000;
+
+  @media (max-width: 575px) {
+    font-size: 11px;
+  }
 }

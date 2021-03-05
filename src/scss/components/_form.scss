@@ -18,18 +18,34 @@
       top: -231px;
       left: -167px;
 
-      content: url("/src/img/tablet.png")
+      content: url("/src/img/tablet.png");
+
+      @media (max-width: 991px) {
+        content: none;
+      }
     }
+  }
+
+  @media (max-width: 991px) {
+    padding-left: 23px;
+    padding-right: 23px;
   }
 }
 
 .form__title {
+  position: relative;
+  z-index: 2;
+
   margin-bottom: 24px;
 
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   color: black;
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
 }
 
 .form__input-list {
@@ -37,6 +53,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .form__input {
@@ -51,6 +71,12 @@
   border-radius: 14px;
   border: solid 1px #d0d0d0;
   background-color: $white;
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
 }
 
 .form__policy-text {

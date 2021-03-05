@@ -8,6 +8,10 @@
   align-items: center;
 
   border-bottom: 1px solid $white;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
 }
 
 .header__menu {
@@ -17,6 +21,11 @@
   align-items: center;
 
   list-style: none;
+
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 .header__item {
@@ -42,6 +51,11 @@
 
   a {
     color: $white;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 

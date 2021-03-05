@@ -5,6 +5,19 @@
 
   @include bg;
   background-image: url('/src/img/bgs/process-bg.png');
+
+  @media (min-width: 1921px) {
+    background-size: auto;
+  }
+
+  @media (max-width: 991px) {
+    background-image: none;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 40px;
+  }
+
 }
 
 .process__title {
@@ -12,10 +25,25 @@
   margin-left: 70px;
 
   font-family: HeliosExt;
-  font-size: 36px;
+  
   font-weight: 900;
   line-height: 50px;
   color: #8d3dff;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    margin-left: 0;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .process__text {
@@ -25,6 +53,10 @@
   font-size: 24px;
   font-weight: 900;
   color: black;
+
+  @media (max-width: 575px) {
+    margin-left: 0;
+  }
 }
 
 .process__goals {
@@ -32,11 +64,25 @@
   width: 67%;
   margin-left: 70px;
   margin-bottom: 20px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+    margin-left: 20px;
+  }
 }
 
 .process__goal {
   width: 35%;
   margin-right: 90px;
+
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .process__img {

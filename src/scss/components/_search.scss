@@ -3,13 +3,33 @@
   padding-bottom: 76px;
 
   @include bg;
-  background-image: url("/src/img/bgs/search-bg.png");
+  background-image: url('/src/img/bgs/search-bg.png');
+
+  @media (min-width: 1921px) {
+    background-size: auto;
+  }
+
+  @media (max-width: 1200px) {
+    background-image: none;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 35px;
+  }
 }
 
 .search__title-box {
   margin-bottom: 50px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 25px;;
+  }
 }
 
 .search__title {
@@ -22,6 +42,21 @@
   line-height: 44px;
   font-weight: 900;
   color: #9438ff;
+
+  @media (max-width: 1200px) {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-right: 0;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 575px) {
+    font-size: 23px;
+    line-height: 36px;
+  }
 }
 
 .search__subtitle {
@@ -29,10 +64,20 @@
 
   font-size: 18px;
   color: black;
+
+  @media (max-width: 575px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .search__list {
   width: 85%;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .search__row {
@@ -44,6 +89,9 @@
     & .search__item {
       width: 24.5%;
       background-color: #f1e7ff;
+      @media (max-width: 575px) {
+        width: 80%;
+      }
     }
   }
 
@@ -51,6 +99,9 @@
     & .search__item {
       width: 32.5%;
       background-color: $white;
+      @media (max-width: 575px) {
+        width: 80%;
+      }
     }
   }
 
@@ -59,7 +110,15 @@
     & .search__item {
       width: 49.5%;
       background-color: #f1e7ff;
+      @media (max-width: 575px) {
+        width: 80%;
+      }
     }
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -71,6 +130,10 @@
 
   border-radius: 14px;
   border: solid 1px #d0d0d0;
+
+  @media (max-width: 575px) {
+    margin-bottom: 10px;
+  }
 }
 
 .search__region {
@@ -83,16 +146,32 @@
   &_small {
     font-size: 18px;
     line-height: 22px;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
   }
 
   &_medium {
     font-size: 24px;
     line-height: 28px;
+
+    @media (max-width: 767px) {
+      font-size: 21px;
+    }
   }
 
   &_big {
     font-size: 32px;
-    line-height: 25px;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -107,16 +186,27 @@
   &_small {
     font-size: 24px;
     line-height: 24px;
+    @media (max-width: 767px) {
+      font-size: 21px;
+    }
   }
 
   &_medium {
     font-size: 32px;
     line-height: 36px;
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
   }
 
   &_big {
     font-size: 36px;
     line-height: 30px;
+
+    @media (max-width: 575px) {
+      font-size: 30px;
+    }
   }
 }
 
