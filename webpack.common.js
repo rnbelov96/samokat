@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     main: './src/index.ts',
+    thanks: './src/ts/thanks.ts'
   },
 
   output: {
@@ -53,17 +54,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html',
+      chunks: ['main'],
       // favicon: './src/img/icons/favicon.ico'
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, './src/thanks.html'),
-    //   filename: 'thanks.html',
-    //   favicon: './src/img/icons/favicon.ico'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, './src/error.html'),
-    //   filename: 'error.html',
-    //   favicon: './src/img/icons/favicon.ico'
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/thanks.html'),
+      filename: 'thanks.html',
+      chunks: ['thanks'],
+      // favicon: './src/img/icons/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/error.html'),
+      filename: 'error.html',
+      chunks: ['thanks'],
+      // favicon: './src/img/icons/favicon.ico'
+    }),
   ],
 }

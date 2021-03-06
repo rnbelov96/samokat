@@ -1,0 +1,110 @@
+@import './lib/reboot.scss';
+@import './lib/fonts.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+@import './base/global.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/modal.scss';
+@import './components/priv-policy.scss';
+@import './components/button.scss';
+
+.thanks,
+.error {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__body {
+    @include bg;
+    background-image: url('/src/img/bgs/desc-bg.jpg');
+    background-attachment: fixed;
+  }
+  &__body,
+  &__html {
+    height: 100%;
+  }
+  &__header {
+    flex: 0 0 auto;
+    padding-top: 20px;
+  }
+  .container {
+    max-width: 1144px;
+  }
+  footer {
+    flex: 0 0 auto;
+  }
+  &__content {
+    flex: 1 0 auto;
+    padding: 40px 0;
+    .container {
+      height: 100%;
+    }
+  }
+  &__content-wrapper {
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+  &__content-box {
+    width: 100%;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: $white;
+  }
+  &__user-name {
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: $white;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 300px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.44;
+    text-align: center;
+    color: $white;
+
+    box-shadow: 0px 3px 0 0 #cc1c3d;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(to top, #e8232b, #f87ca5);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 0 0 #de3958;
+      background-image: linear-gradient(to top, #f04a5a, #ff99bb);
+      outline: none;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 1px 0 rgba(0, 0, 0, 0.23);
+      background-image: linear-gradient(to top, #bd0007, #ed3d4e);
+    }
+  }
+}
+
+.error {
+  &__btn-box {
+    margin-top: 20px;
+  }
+}
