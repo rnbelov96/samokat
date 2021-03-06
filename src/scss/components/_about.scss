@@ -8,6 +8,10 @@
 
   @include bg;
   background-image: url('/src/img/bgs/about-bg.png');
+
+  @media (max-width: 991px) {
+    padding-top: 230px;
+  }
 }
 
 .about__title {
@@ -18,12 +22,27 @@
   font-weight: 900;
   text-align: center;
   color: black;
+
+  @media (max-width: 991px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+  }
 }
 
 .about__content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about__list {
@@ -35,6 +54,10 @@
   width: 59%;
 
   list-style: none;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
 }
 
 .about__item {
@@ -44,6 +67,10 @@
   &:nth-child(2n) {
     position: relative;
     top: 40px;
+
+    @media (max-width: 575px) {
+      top: 0;
+    }
   }
 }
 

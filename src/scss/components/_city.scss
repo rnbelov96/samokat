@@ -5,6 +5,11 @@
 
   @include bg;
   background-image: url("/src/img/bgs/desc-bg.jpg");
+
+  @media (max-width: 575px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }
 
 .city__title {
@@ -14,10 +19,18 @@
   font-size: 36px;
   font-weight: 900;
   text-align: center;
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+  }
 }
 
 .city__img {
   display: block;
   margin: 0 auto;
   margin-bottom: 184px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 100px;
+  }
 }

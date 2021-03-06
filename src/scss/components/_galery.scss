@@ -5,6 +5,14 @@
 
   @include bg;
   background-image: url("/src/img/bgs/galery-bg.jpg");
+
+  @media (max-width: 991px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 575px) {
+    padding-bottom: 50px;
+  }
 }
 
 .galery__title {
@@ -14,6 +22,10 @@
   font-size: 36px;
   font-weight: 900;
   text-align: center;
+
+  @media (max-width: 575px) {
+    font-size: 33px;
+  }
 }
 
 .galery__img {
@@ -38,6 +50,14 @@
   &:nth-child(2n) {
     position: relative;
     top: 10px;
+
+    @media (max-width: 767px) {
+      top: 0
+    }
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
   }
 }
 

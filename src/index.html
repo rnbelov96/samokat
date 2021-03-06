@@ -727,25 +727,27 @@
             <li class="docs__item">
               <p class="docs__input-box">
                 <input
-                  type="radio"
+                  type="checkbox"
                   name="doc"
-                  class="docs__input visually-hidden"
+                  class="docs__input visually-hidden js-checkbox-input"
                   checked
                   id="present"
-                /><label for="present" class="docs__input-label js-radio-input"
+                  data-id="1"
+                /><label for="present" class="docs__input-label "
                   >Презентация</label
                 >
               </p>
-              <div class="docs__picture"></div>
+              <div class="docs__picture docs__picture_shadow"></div>
             </li>
             <li class="docs__item">
               <p class="docs__input-box">
                 <input
-                  type="radio"
+                  type="checkbox"
                   name="doc"
-                  class="docs__input visually-hidden"
+                  class="docs__input visually-hidden js-checkbox-input"
                   id="model"
-                /><label for="model" class="docs__input-label js-radio-input"
+                  data-id="2"
+                /><label for="model" class="docs__input-label "
                   >Финансовая модель</label
                 >
               </p>
@@ -754,11 +756,12 @@
             <li class="docs__item">
               <p class="docs__input-box">
                 <input
-                  type="radio"
+                  type="checkbox"
                   name="doc"
-                  class="docs__input visually-hidden"
+                  class="docs__input visually-hidden js-checkbox-input"
                   id="plan"
-                /><label for="plan" class="docs__input-label js-radio-input"
+                  data-id="3"
+                /><label for="plan" class="docs__input-label"
                   >Бизнес-план</label
                 >
               </p>
@@ -769,10 +772,10 @@
           <p class="docs__text">
             Вы выбрали для получения: <br />
             <span>
-              «<span class="js-radio-text"
+              «<span class="js-checkbox-text"
                 >Динамически подставляемый список документации выбранный
-                выше»</span
-              ></span
+                выше</span
+              >»</span
             >
           </p>
 

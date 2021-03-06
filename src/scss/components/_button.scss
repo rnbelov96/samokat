@@ -40,5 +40,10 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
+
+    @media (max-width: 575px) {
+      font-size: 10px;
+      width: 100%;
+    }
   }
 }

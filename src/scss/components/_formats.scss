@@ -5,6 +5,11 @@
 
   @include bg;
   background-image: url('/src/img/bgs/formats-bg.jpg');
+
+  @media (max-width: 991px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .formats__title {
@@ -14,6 +19,16 @@
   font-size: 36px;
   font-weight: 900;
   text-align: center;
+
+  @media (max-width: 991px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+  }
 }
 
 .formats__img {
@@ -31,6 +46,10 @@
   background-color: #f1e7ff;
 
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .formats__row {
@@ -45,10 +64,17 @@
 
   &:last-child {
     min-height: 194px;
+
+    & .formats__cell {
+      display: block;
+    }
   }
 }
 
 .formats__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -59,18 +85,36 @@
   text-align: center;
   color: black;
 
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+
   &_head {
     font-family: HeliosExt;
     font-size: 24px;
     font-weight: 900;
     padding-top: 35px;
     padding-bottom: 35px;
+
+    @media (max-width: 575px) {
+      font-size: 18px;
+    }
   }
 
   &_first {
     text-align: left;
     padding-left: 40px;
     width: 26%;
+    display: block;
+
+    @media (max-width: 767px) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 11px;
+      padding-left: 5px;
+    }
   }
 
   &:nth-child(2n) {
@@ -82,6 +126,9 @@
     b {
       font-size: 24px;
       font-weight: bold;
+      @media (max-width: 575px) {
+        font-size: 15px;
+      }
     }
   }
 }

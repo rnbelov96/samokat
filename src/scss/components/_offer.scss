@@ -6,6 +6,10 @@
 
   @include bg;
   background-image: url('/src/img/bgs/offer-bg.jpg');
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+  }
 }
 
 .offer__title {
@@ -15,6 +19,16 @@
   font-size: 36px;
   font-weight: 900;
   color: black;
+
+  @media (max-width: 991px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
 }
 
 .offer__text {
@@ -42,6 +56,19 @@
   margin-right: 40px;
   margin-bottom: 40px;
   width: 22%;
+
+  @media (max-width: 991px) {
+    width: 26%;
+  }
+
+  @media (max-width: 767px) {
+    width: 40%;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .offer__item-number {
@@ -80,4 +107,12 @@
 
   @include bg;
   background-image: url('/src/img/laptop.png');
+
+  @media (max-width: 1200px) {
+    right: 50px;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
