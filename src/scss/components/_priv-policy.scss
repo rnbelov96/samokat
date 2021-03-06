@@ -2,10 +2,16 @@
   position: relative;
   max-width: 650px;
   background-color: white;
+  color: black;
   padding: 24px 44px;
   font-size: 16px;
   &_modal {
     margin: 40px auto;
+  }
+
+  @media (max-width: 575px) {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

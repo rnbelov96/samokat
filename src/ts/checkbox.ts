@@ -4,12 +4,12 @@ const checkboxesData = [
   {
     id: 1,
     data: 'Презентация',
-    isChecked: true,
+    isChecked: false,
   },
   {
     id: 2,
     data: 'Финансовая модель',
-    isChecked: false,
+    isChecked: true,
   },
   {
     id: 3,

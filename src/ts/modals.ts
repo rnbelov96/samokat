@@ -16,6 +16,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
+const [policyModalEl, formModalEl] = modalElList;
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
@@ -35,4 +36,16 @@ closeModalElList.forEach(closeEl => {
   });
 });
 
-// Найти кнопки и прописать события
+const policyCallBtnList = document.querySelectorAll('.js-policy');
+policyCallBtnList.forEach(btn => {
+  btn.addEventListener('click', () => {
+    openModal(policyModalEl as HTMLDivElement);
+  });
+});
+
+const formCallBtnList = document.querySelectorAll('.js-modal-form');
+formCallBtnList.forEach(btn => {
+  btn.addEventListener('click', () => {
+    openModal(formModalEl as HTMLDivElement);
+  });
+});
