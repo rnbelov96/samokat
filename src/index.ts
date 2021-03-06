@@ -4,3 +4,4 @@ import './scss/style.scss';
 import './ts/modals';
 import './ts/checkbox';
 import './ts/form-validation';
+import './ts/menu';
