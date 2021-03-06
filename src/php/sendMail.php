@@ -10,10 +10,10 @@
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
     $mail->setFrom('site@mysite.ru');
-    $mail->addAddress('melega@bk.ru');
+    $mail->addAddress('samokatday@yandex.ru');
     $mail->Subject = 'Новая заявка';
 
-    $body .= '<h1>Заявка на сайте франшизы "Баланс Эксперт".</h1>';
+    $body .= '<h1>Заявка на сайте франшизы "Samokat Day".</h1>';
 
     if (trim(!empty($_POST['name']))) {
         $body .= '<p><strong>Имя</strong>: '.$_POST['name'].'</p>';
