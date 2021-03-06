@@ -25,7 +25,23 @@
   }
 
   &_copyright {
-    width: 65%;
+    width: 50%;
+
+    &_thanks {
+      width: 40%;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &_address {
+    width: 50%;
+
+    &_thanks {
+      width: 40%;
+    }
 
     @media (max-width: 991px) {
       width: 100%;

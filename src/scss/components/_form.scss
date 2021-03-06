@@ -72,6 +72,11 @@
   border: solid 1px #d0d0d0;
   background-color: $white;
 
+  &:focus {
+    border: solid 1px #999898;
+    outline: none;
+  }
+
   @media (max-width: 767px) {
     width: 100%;
 

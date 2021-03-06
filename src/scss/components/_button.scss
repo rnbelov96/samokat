@@ -13,6 +13,19 @@
   box-shadow: -2.8px 1px 24px 0 rgba(220, 33, 38, 0.39), 0px 4px 0px 0px #b90a3f;
   border: none;
 
+  &:hover, &:focus {
+    background-color: #f0356d;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #b90f42;
+    box-shadow: none;
+  }
+
   &_form {
     width: 24%;
 
