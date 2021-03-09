@@ -32,6 +32,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
+  height: auto;
 }
 
 .galery__content {
@@ -51,9 +52,22 @@
     position: relative;
     top: 10px;
 
+    @media (max-width: 1700px) {
+      align-items: flex-start;
+    }
+
     @media (max-width: 767px) {
       top: 0
     }
+  }
+
+  @media (max-width: 1700px) {
+    width: 40%;
+    align-items: flex-end;
+  }
+
+  @media (max-width: 1200px) {
+    width: auto;
   }
 
   @media (max-width: 575px) {
@@ -62,6 +76,11 @@
 }
 
 .galery__photo {
+  width: 420px;
   margin-bottom: 19px;
-  border-radius: 14px
+  border-radius: 20px;
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
 }
