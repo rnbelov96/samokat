@@ -31,7 +31,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [policyModalEl, formModalEl] = modalElList;
+const [policyModalEl, formModalEl, youtubeModalEl] = modalElList;
 
 const formTitleEl = formModalEl.querySelector('h2') as HTMLHeadingElement;
 const formBtnEl = formModalEl.querySelector('button') as HTMLButtonElement;
@@ -41,6 +41,13 @@ modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
     if (e.target === e.currentTarget || [...modalWrapperElList].includes(e.target as Element)) {
       const clickedModal = e.currentTarget as HTMLDivElement;
+      if (clickedModal === youtubeModalEl) {
+        const iframe = youtubeModalEl.querySelector('iframe');
+        if (iframe) {
+          const iframeSrc = iframe.src;
+          iframe.src = iframeSrc;
+        }
+      }
       closeModal(clickedModal);
     }
   });
@@ -88,4 +95,10 @@ partBtnElList.forEach(btn => {
     formBtnEl.textContent = modalFormInfoList[2].button;
     openModal(formModalEl as HTMLDivElement);
   });
+});
+
+const youtubeBtnCallEl = document.querySelector('.js-youtube-call') as HTMLButtonElement;
+
+youtubeBtnCallEl.addEventListener('click', () => {
+  openModal(youtubeModalEl as HTMLDivElement);
 });

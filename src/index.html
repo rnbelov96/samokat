@@ -30,6 +30,10 @@
               </button>
             </div>
           </div>
+
+          <div class="header__hamburger">
+            <div class="header__hamburger-line"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -97,13 +101,15 @@
             Станьте владельцем самого <br />популярного бизнеса этого года
           </h2>
           <div class="video__content">
-            <img
-              src="./img/mac.png"
-              width="1021"
-              height="620"
-              alt="Ноутбук"
-              class="video__img"
-            />
+            <div class="video__img">
+              <img
+                src="./img/mac.png"
+                width="1021"
+                height="620"
+                alt="Ноутбук"
+              />
+              <button type="button" class="video__btn js-youtube-call"></button>
+            </div>
             <div class="video__circles">
               <div class="video__top-circle">
                 <b>$ 630 млн</b>
@@ -1056,7 +1062,8 @@
           <li class="priv-policy__item">
             2. Настоящая политика Оператора в отношении обработки персональных
             данных (далее – Политика) применяется ко всей информации, которую
-            Оператор может получить о посетителях веб-сайта компании «Samokat Day».
+            Оператор может получить о посетителях веб-сайта компании «Samokat
+            Day».
           </li>
         </ol>
 
@@ -1336,6 +1343,20 @@
             type="button"
           ></button>
         </form>
+      </div>
+    </div>
+
+    <div class="modal modal_video">
+      <div class="modal__center-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          class="modal__video"
+          src="https://www.youtube.com/embed/LXK3sphcbAQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </body>

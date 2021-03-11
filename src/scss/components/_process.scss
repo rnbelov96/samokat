@@ -41,7 +41,7 @@
   @media (max-width: 575px) {
     margin-left: 0;
 
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
   }
 }
@@ -56,6 +56,11 @@
 
   @media (max-width: 575px) {
     margin-left: 0;
+    font-size: 17px;
+
+    br {
+      display: none;
+    }
   }
 }
 
